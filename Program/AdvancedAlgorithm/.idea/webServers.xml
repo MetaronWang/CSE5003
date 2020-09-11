@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="f20b82e9-1e2f-4557-b869-207144b3d4e4" name="amax_docker_env1">
+        <fileTransfer rootFolder="/root/AdvancedAlgorithm" accessType="SFTP" host="10.20.56.75" port="2333" sshConfigId="7d6ebe04-aa38-4504-857a-65adc2e56f8b" sshConfig="root@10.20.56.75:2333 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
