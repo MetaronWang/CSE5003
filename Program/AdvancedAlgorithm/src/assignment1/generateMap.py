@@ -12,7 +12,7 @@ def getAllPaths(n):
     np.save("path.npy", np.array(all))
 
 
-def getPoints(n, path='./'):
+def getPoints(n, path='./', distance=1200):
     points = []
     while len(points) < n:
         valid = False
@@ -24,7 +24,7 @@ def getPoints(n, path='./'):
             valid = True
             for p in points:
                 d = pow(x - p[0], 2) + pow(y - p[1], 2)
-                if d < 1200:
+                if d < distance:
                     valid = False
                     break
             if valid:
@@ -45,6 +45,6 @@ def getDistance(n, path='./'):
 
 
 if __name__ == '__main__':
-    getPoints(10)
+    # getPoints(10)
     getDistance(10)
-    getAllPaths(10)
+    # getAllPaths(10)

@@ -35,7 +35,7 @@ def fun1(start, distance_matrix, return_dict):
 def NNG(path):
     distance_matrix = np.load(path + 'distance.npy')
     start = time.time()
-    process_num = 10
+    process_num = distance_matrix.shape[0]
     process_list = []
     manager = Manager()
     return_dict = manager.dict()
@@ -46,16 +46,21 @@ def NNG(path):
 
     for p in process_list:
         p.join()
-
+    max = 0
+    max_path = []
     min = 10000000000
     min_path = []
     for i in return_dict:
         if return_dict[i][0] < min:
             min = return_dict[i][0]
             min_path = return_dict[i][1]
+        if return_dict[i][0] > max:
+            max = return_dict[i][0]
+            max_path = return_dict[i][1]
     print(time.time() - start)
     # print(min, min_path)
-    return (min, min_path)
+    return ((min, min_path), (max, max_path))
+
+
 if __name__ == '__main__':
-    min, min_path = NNG('./')
-    printPic(min_path, min)
+    printPic(NNG('./'))

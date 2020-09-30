@@ -46,4 +46,4 @@ def brute(path):
 
 
 if __name__ == '__main__':
-    brute('./')
+    print(brute('./'))

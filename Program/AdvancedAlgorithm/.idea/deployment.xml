@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="root@10.20.56.75:2333 password" remoteFilesAllowedToDisappearOnAutoupload="false">
+  <component name="PublishConfigData" autoUpload="Always" serverName="AdvancedAlgorithm" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
+      <paths name="AdvancedAlgorithm">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="amax_docker_env1">
         <serverdata>
           <mappings>
             <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="root@10.20.56.75:2333 password">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/root/AdvancedAlgorithm" local="$PROJECT_DIR$" />
           </mappings>
         </serverdata>
       </paths>

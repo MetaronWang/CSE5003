@@ -1,9 +1,7 @@
 
-a = [1,23,4,5,6]
-b = [4]
 if __name__ == '__main__':
-    a1 = a.copy()
-    a1.remove(4)
-    print(a1)
-    print(a)
-    print(b)
+    r = [1,23]
+    a = [(0,1),(2,3)]
+    for i in r:
+        if i not in a:
+            print(list(i))
