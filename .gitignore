@@ -1,4 +1,9 @@
-*/.idea
+*/.idea/*
 */__pycharm__
 */.vscodes
-*/AdvancedAlgorithm/src/assignment1/result
+*.pyc
+*.jpg
+*.png
+*.gif
+*.zip
+*.pdf

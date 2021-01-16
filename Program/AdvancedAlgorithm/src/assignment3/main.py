@@ -41,6 +41,10 @@ def get_resut(job_num, machine_num, test_num):
 
 
 if __name__ == '__main__':
-    get_resut(11, 5, 1000)
-    get_resut(9, 4, 1000)
-    get_resut(7, 3, 1000)
+    # get_resut(11, 5, 1000)
+    # get_resut(9, 4, 1000)
+    # get_resut(7, 3, 1000)
+    statistic(11, 5)
+    statistic(9, 4)
+    statistic(8, 3)
+    statistic(7, 3)
